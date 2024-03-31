@@ -1,15 +1,14 @@
-import { Header } from "./components/Header";
-import { Footer } from "./components/Footer";
-import './App.css';
+import { AllRoutes } from './routes/AllRoutes';
+import { Footer, Header } from './components';
 
-export default function App() {
+function App() {
   return (
-    <>
+    <div className="App dark:bg-dark">
       <Header />
-      <div>
-        <h1>Shubham</h1>
-      </div>
+      <AllRoutes />
       <Footer />
-    </>
-  )
+    </div>
+  );
 }
+
+export default App;
